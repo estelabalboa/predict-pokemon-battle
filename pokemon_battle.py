@@ -21,6 +21,14 @@ class PokemonBattle:
         # Descripción analítica básica del dataframe
         print(np.round(pokemon_data.describe()))
 
+        # Visualizando la distribución de cada variable
+        import matplotlib.pyplot as plt
+        pokemon_data.hist(bins=50, figsize=(10, 8))
+        plt.show()
+
+
+
+
 
 if __name__ == '__main__':
     battle_result = PokemonBattle()
